@@ -569,6 +569,41 @@ td {
 }
 
 
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-control input,
+.input-control textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.contact-info p, .contact-info a {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #eee;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.submit-btn button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #000;
+  padding: 0.8rem 2rem;
+
+}
+
 .certificate {
   padding: 4rem 2rem;
   background-color: var(--color-bg, #0f0f0f);
