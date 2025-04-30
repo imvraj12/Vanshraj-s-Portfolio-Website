@@ -11,3 +11,17 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+emailjs.init("GnXwSWycSIj-B30ey"); // Replace with your Public Key
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_i80fepi", "template_gtatqif", this)
+    .then(() => {
+      alert("Message sent successfully!");
+      this.reset();
+    }, (error) => {
+      console.log("FAILED...", error);
+      alert("Failed to send message. Please try again.");
+    });
+});
